@@ -3,7 +3,8 @@ const app = express()
 const http = require('http').createServer(app)
 
 const PORT = process.env.PORT || 3000
-app.use(express.static('public'))
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'public')))
 
 http.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
