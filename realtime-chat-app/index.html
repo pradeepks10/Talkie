@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkie Chat App</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="/Talkie.png" alt="">
+            <h1 >Talkie</h1>
+        </div>
+        <div class="message__area"></div>
+        <audio id="beepSound" src= "/Notification.mp3"></audio>
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Type a message..."></textarea>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+
+</html>
